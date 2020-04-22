@@ -27,12 +27,12 @@ namespace StudentUWPApp
         {
             this.InitializeComponent();
 
-            Student Student1 = new Student("Gleb");
-            Student Student2 = new Student("John");
-            Student Student3 = new Student("Simon");
-            Student Student4 = new Student("Thais");
-            Student Student5 = new Student("Hassan");
-            Student Student6 = new Student("Jeppe");
+            Student Student1 = new Student("Gleb",123);
+            Student Student2 = new Student("John",124);
+            Student Student3 = new Student("Simon",125);
+            Student Student4 = new Student("Thais",126);
+            Student Student5 = new Student("Hassan",127);
+            Student Student6 = new Student("Jeppe",128);
 
             OC_list_Students.Add(Student1);
             OC_list_Students.Add(Student2);
