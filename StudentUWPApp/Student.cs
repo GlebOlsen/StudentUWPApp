@@ -25,7 +25,7 @@ namespace StudentUWPApp
             }
             set
             {
-                _navn = value;
+                _name = value;
                 this.OnPropertyChanged();
             }
         }
