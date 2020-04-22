@@ -41,12 +41,6 @@ namespace StudentUWPApp
             OC_list_Students.Add(Student5);
             OC_list_Students.Add(Student6);
 
-            ///Commit 3
-            ///commint 3 3.0
-            ///commit 2.0
-
-
-
         }
         ObservableCollection<Student> OC_list_Students = new ObservableCollection<Student>();
     }
