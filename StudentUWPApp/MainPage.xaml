@@ -16,6 +16,7 @@
                     <StackPanel Orientation="Horizontal">
                         <TextBox Text="{x:Bind Name, Mode=TwoWay}"/>
                         <TextBlock Text="{x:Bind StudentID, Mode=TwoWay}"/>
+                        <TextBlock Text="{x:Bind MobilNR, Mode=TwoWay}"/>
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>

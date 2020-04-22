@@ -12,11 +12,13 @@ namespace StudentUWPApp
     {
         private string _name;
         private int _StudentID;
+        private int _mobilNR;
         public event PropertyChangedEventHandler PropertyChanged;
-        public Student(string name, int studentID)
+        public Student(string name, int studentID, int mobilNR)
         {
             _name = name;
             _StudentID = studentID;
+            _mobilNR = mobilNR;
         }
 
         public string Name
@@ -44,7 +46,18 @@ namespace StudentUWPApp
                 this.OnPropertyChanged();
             }
         }
-
+        public int MobilNR
+        {
+            get
+            {
+                return _mobilNR;
+            }
+            set
+            {
+                _mobilNR = value;
+                this.OnPropertyChanged();
+            }
+        }
         public void OnPropertyChanged([CallerMemberName] string propertyName = null) => this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
 }
